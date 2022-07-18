@@ -1,0 +1,5 @@
+package com.bishal.springdatajpa.entities;
+
+public class Product {
+
+}

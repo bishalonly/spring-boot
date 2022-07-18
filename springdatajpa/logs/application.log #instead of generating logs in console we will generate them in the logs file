@@ -1,0 +1,152 @@
+2022-07-10 21:09:51.493 ERROR 8288 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.root' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.root
+    Value: info #logging info is generated in the logs file
+    Origin: class path resource [application.properties] - 12:20
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.info #logging info is generated in the logs file)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2022-07-10 21:11:30.155 ERROR 1688 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.root' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.root
+    Value: INFO #logging info is generated in the logs file
+    Origin: class path resource [application.properties] - 12:20
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.INFO #logging info is generated in the logs file)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2022-07-10 21:12:14.746  INFO 8104 --- [main] c.b.s.SpringdatajpaApplication           : Starting SpringdatajpaApplication using Java 17.0.1 on Bishal with PID 8104 (C:\Users\bishal\Documents\ignitedMinds\springdatajpa\target\classes started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-10 21:12:14.763  INFO 8104 --- [main] c.b.s.SpringdatajpaApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-07-10 21:12:18.173  INFO 8104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:12:18.370  INFO 8104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174 ms. Found 2 JPA repository interfaces.
+2022-07-10 21:12:20.196  WARN 8104 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-07-10 21:12:20.268  INFO 8104 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:12:20.268  INFO 8104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5330 ms
+2022-07-10 21:12:21.190  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 21:12:22.926  INFO 8104 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 21:12:23.176  INFO 8104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:12:23.484  INFO 8104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 21:12:24.404  INFO 8104 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 21:12:24.760  INFO 8104 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:12:26.179  INFO 8104 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:12:26.195  INFO 8104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:12:26.972  WARN 8104 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:12:28.231  INFO 8104 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-10 21:12:28.342  INFO 8104 --- [main] io.undertow                              : starting server: Undertow - 2.2.18.Final
+2022-07-10 21:12:28.388  INFO 8104 --- [main] org.xnio                                 : XNIO version 3.8.7.Final
+2022-07-10 21:12:28.417  INFO 8104 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-07-10 21:12:28.683  INFO 8104 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-07-10 21:12:28.876  INFO 8104 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2022-07-10 21:12:28.906  INFO 8104 --- [main] c.b.s.SpringdatajpaApplication           : Started SpringdatajpaApplication in 15.236 seconds (JVM running for 16.583)
+2022-07-10 21:12:30.179  INFO 8104 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 21:12:30.180  INFO 8104 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 21:12:30.184  INFO 8104 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-10 21:15:27.546  INFO 8104 --- [XNIO-1 task-1] c.b.s.controllers.ProductRestController  : Creating the Product com.bishal.springdatajpa.entities.Product@13da1c1a
+2022-07-10 21:17:12.101  INFO 8104 --- [XNIO-1 task-1] c.b.s.controllers.ProductRestController  : Finding the Product by ID 9
+2022-07-10 21:17:43.899  WARN 8104 --- [XNIO-1 task-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "actuators"]
+2022-07-10 21:17:56.025  WARN 8104 --- [XNIO-1 task-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "actuator"]
+2022-07-10 21:21:37.463  WARN 8104 --- [XNIO-1 task-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "actuator"]
+2022-07-10 22:17:11.506  WARN 8104 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m18s205ms132µs700ns).
+2022-07-10 22:19:03.060  WARN 8104 --- [RMI TCP Connection(31)-127.0.0.1] javax.management.remote.misc             : The server has decided to close this client connection.
+2022-07-10 22:21:51.618  INFO 8104 --- [RMI TCP Connection(38)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-10 22:21:52.590  INFO 8104 --- [RMI TCP Connection(38)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.18.Final
+2022-07-10 22:21:53.090  INFO 8104 --- [RMI TCP Connection(38)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-07-10 22:21:53.426  INFO 8104 --- [RMI TCP Connection(38)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 22:21:53.933  INFO 8104 --- [RMI TCP Connection(38)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 22:21:54.157  INFO 8104 --- [RMI TCP Connection(38)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 22:22:17.197 ERROR 6372 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.root' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.root
+    Value: INFO #logging info is generated in the logs file
+    Origin: class path resource [application.properties] - 12:22
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.INFO #logging info is generated in the logs file)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2022-07-10 22:23:00.552  INFO 9520 --- [main] c.b.s.SpringdatajpaApplication           : Starting SpringdatajpaApplication using Java 17.0.1 on Bishal with PID 9520 (C:\Users\bishal\Documents\ignitedMinds\springdatajpa\target\classes started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-10 22:23:00.558  INFO 9520 --- [main] c.b.s.SpringdatajpaApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-07-10 22:23:03.691  INFO 9520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 22:23:03.842  INFO 9520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 2 JPA repository interfaces.
+2022-07-10 22:23:06.923  WARN 9520 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-07-10 22:23:06.987  INFO 9520 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-07-10 22:23:06.987  INFO 9520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6142 ms
+2022-07-10 22:23:08.728  INFO 9520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 22:23:13.432  INFO 9520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 22:23:15.095  INFO 9520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 22:23:17.096  INFO 9520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 22:23:18.477  INFO 9520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 22:23:19.291  INFO 9520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 22:23:21.400  INFO 9520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 22:23:21.467  INFO 9520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 22:23:22.275  WARN 9520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 22:23:23.709  INFO 9520 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-10 22:23:23.861  INFO 9520 --- [main] io.undertow                              : starting server: Undertow - 2.2.18.Final
+2022-07-10 22:23:24.061  INFO 9520 --- [main] org.xnio                                 : XNIO version 3.8.7.Final
+2022-07-10 22:23:24.213  INFO 9520 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-07-10 22:23:26.603  INFO 9520 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-07-10 22:23:26.756  INFO 9520 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 22:23:26.756  INFO 9520 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 22:23:26.820  INFO 9520 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 64 ms
+2022-07-10 22:23:27.557  INFO 9520 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2022-07-10 22:23:27.557  INFO 9520 --- [main] c.b.s.SpringdatajpaApplication           : Started SpringdatajpaApplication in 28.006 seconds (JVM running for 29.569)
+2022-07-10 22:25:32.072  INFO 9520 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-10 22:25:32.077  INFO 9520 --- [RMI TCP Connection(8)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.18.Final
+2022-07-10 22:25:32.082  INFO 9520 --- [RMI TCP Connection(8)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-07-10 22:25:32.089  INFO 9520 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 22:25:32.095  INFO 9520 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 22:25:32.184  INFO 9520 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

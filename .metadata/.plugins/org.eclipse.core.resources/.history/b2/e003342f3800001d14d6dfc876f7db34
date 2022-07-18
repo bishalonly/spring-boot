@@ -1,0 +1,32 @@
+2022-07-10 15:31:34.563  INFO 13512 --- [main] c.b.s.SpringdatajpaApplication           : Starting SpringdatajpaApplication using Java 17.0.1 on Bishal with PID 13512 (C:\Users\bishal\Documents\ignitedMinds\springdatajpa\target\classes started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-10 15:31:34.569  INFO 13512 --- [main] c.b.s.SpringdatajpaApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-07-10 15:31:35.624  INFO 13512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 15:31:35.718  INFO 13512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2022-07-10 15:31:36.690  WARN 13512 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-07-10 15:31:36.749  INFO 13512 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-07-10 15:31:36.749  INFO 13512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2065 ms
+2022-07-10 15:31:37.179  INFO 13512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 15:31:38.016  INFO 13512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 15:31:38.249  INFO 13512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 15:31:38.735  INFO 13512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 15:31:39.694  INFO 13512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 15:31:40.061  INFO 13512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 15:31:41.262  INFO 13512 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 15:31:41.280  INFO 13512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 15:31:41.861  WARN 13512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 15:31:42.441  INFO 13512 --- [main] io.undertow                              : starting server: Undertow - 2.2.18.Final
+2022-07-10 15:31:42.455  INFO 13512 --- [main] org.xnio                                 : XNIO version 3.8.7.Final
+2022-07-10 15:31:42.469  INFO 13512 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-07-10 15:31:42.570  INFO 13512 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-07-10 15:31:42.661  INFO 13512 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2022-07-10 15:31:42.675  INFO 13512 --- [main] c.b.s.SpringdatajpaApplication           : Started SpringdatajpaApplication in 8.827 seconds (JVM running for 9.999)
+2022-07-10 15:32:11.993  INFO 13512 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 15:32:11.993  INFO 13512 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 15:32:11.993  INFO 13512 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-10 15:32:12.121  INFO 13512 --- [XNIO-1 task-1] c.b.s.controllers.ProductRestController  : Finding the Product by ID 1
+2022-07-10 15:36:36.120  INFO 13512 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-10 15:36:51.613  INFO 13512 --- [RMI TCP Connection(9)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.18.Final
+2022-07-10 15:36:55.168  INFO 13512 --- [RMI TCP Connection(9)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-07-10 15:36:56.977  INFO 13512 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 15:37:00.685  INFO 13512 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 15:37:10.931  INFO 13512 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,6 @@
+<html xmlns:th="http://www.thymeleaf.org/">
+<head><title>Data rendered</title></head>
+<body>
+<div th:test="${Quote}"></div>
+</body>
+</html xmlns:th="http://www.thymeleaf.org/">

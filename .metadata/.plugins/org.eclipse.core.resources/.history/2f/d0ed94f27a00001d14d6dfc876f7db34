@@ -1,0 +1,14 @@
+package com.bishal.springdatajpa.infochecks;
+
+import org.springframework.boot.actuate.info.Info.Builder;
+import org.springframework.boot.actuate.info.InfoContributor;
+
+public class StudentInfoContributor implements InfoContributor {
+
+	@Override
+	public void contribute(Builder builder) {
+		// TODO Auto-generated method stub
+		builder.build();
+	}
+
+}
