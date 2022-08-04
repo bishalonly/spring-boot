@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -26,7 +27,8 @@ public class HelloController {
 	@RequestMapping("/getData")
 	public ModelAndView getData() {
 		ModelAndView mav = new ModelAndView("data");
-		mav.addObject("Quote", "Arise and Work till the goal is reached");
+		mav.addObject("Quote", "Arise and Work till the goal is reached"); 
+		// when we will pass the variable "Quote" in html page it will render the message "Arise and work....reached"
 		return mav;
 	}
 	
@@ -57,4 +59,15 @@ public class HelloController {
 		mav.addObject("studentsInfo", students);
 		return mav;
 	}
+	
+//	@RequestMapping("/studentForm")
+//	public ModelAndView studentForm(@ModelAttribute Student student) {
+//		ModelAndView mav = new ModelAndView("studentForm");
+//		Student student1 = new Student();
+//		student.setName("Bishal");
+//		student.setScore(100);
+//		mav.addObject("studentForm", student);
+//		return mav;
+//	}
+	
 }

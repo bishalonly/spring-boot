@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +19,7 @@ import com.bishal.springdatajpa.repos.ProductRepository;
 import ch.qos.logback.classic.Logger;
 
 @RestController
+@RequestMapping("/home/")
 public class ProductRestController {
 
 	@Autowired
@@ -29,6 +33,8 @@ public class ProductRestController {
 	}
 
 	@RequestMapping(value = "/products/{id}", method = RequestMethod.GET)
+	@Transactional(readOnly=true)
+	@Cacheable("product-cache")
 	public Product getProduct(@PathVariable("id") int id) {
 		LOGGER.info("Finding the Product by ID " + id);
 		return repo.findById(id).get();
@@ -47,6 +53,7 @@ public class ProductRestController {
 	}
 
 	@RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
+	@CacheEvict("product-cache")
 	public void deleteProduct(@PathVariable("id") int id) {
 		LOGGER.info("deleting the Product by ID " + id);
 		repo.deleteById(id);

@@ -1,6 +1,0 @@
-<html xmlns:th="http://www.thymeleaf.org/">
-<head><title>Data rendered</title></head>
-<body>
-<div th:text="${Quote}"></div>
-</body>
-</html xmlns:th="http://www.thymeleaf.org/">

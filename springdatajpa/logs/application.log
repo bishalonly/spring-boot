@@ -1,239 +1,374 @@
-2022-07-11 00:35:15.249  INFO 13148 --- [RMI TCP Connection(123)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-07-11 00:35:14.888  INFO 13148 --- [RMI TCP Connection(121)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-07-11 00:36:06.509  INFO 13148 --- [RMI TCP Connection(123)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.18.Final
-2022-07-11 00:36:10.546  INFO 13148 --- [RMI TCP Connection(123)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-07-11 00:36:14.873  INFO 13148 --- [RMI TCP Connection(123)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-07-11 00:36:22.364  INFO 13148 --- [RMI TCP Connection(123)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-07-11 00:36:29.528  INFO 13148 --- [RMI TCP Connection(123)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-07-11 00:41:42.065  INFO 12308 --- [main] c.b.s.SpringdatajpaApplication           : Starting SpringdatajpaApplication using Java 17.0.1 on Bishal with PID 12308 (C:\Users\bishal\Documents\ignitedMinds\springdatajpa\target\classes started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
-2022-07-11 00:41:42.085  INFO 12308 --- [main] c.b.s.SpringdatajpaApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-07-11 00:41:45.643  INFO 12308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-07-11 00:41:45.815  INFO 12308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 2 JPA repository interfaces.
-2022-07-11 00:41:47.530  WARN 12308 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-07-11 00:41:47.586  INFO 12308 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-07-11 00:41:47.587  INFO 12308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5280 ms
-2022-07-11 00:41:48.388  INFO 12308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-07-11 00:41:49.819  INFO 12308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-07-11 00:41:50.049  INFO 12308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-07-11 00:41:50.343  INFO 12308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-07-11 00:41:51.309  INFO 12308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-07-11 00:41:51.701  INFO 12308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-07-11 00:41:53.882  INFO 12308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-07-11 00:41:53.901  INFO 12308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-07-11 00:41:54.611  WARN 12308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-07-11 00:41:55.856  WARN 12308 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-07-19 00:26:35.690  INFO 1836 --- [main] c.b.s.SpringdatajpaApplicationTests      : Starting SpringdatajpaApplicationTests using Java 17.0.1 on Bishal with PID 1836 (started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-19 00:26:35.722  INFO 1836 --- [main] c.b.s.SpringdatajpaApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-07-19 00:26:41.274  INFO 1836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-19 00:26:41.921  INFO 1836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 605 ms. Found 2 JPA repository interfaces.
+2022-07-19 00:26:47.197  WARN 1836 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-07-19 00:26:49.240  INFO 1836 --- [main] com.hazelcast.system.logo                : [192.168.185.3]:5701 [dev] [5.1.2] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2022-07-19 00:26:49.241  INFO 1836 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2022-07-19 00:26:49.241  INFO 1836 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Hazelcast Platform 5.1.2 (20220613 - d9dcc82) starting at [192.168.185.3]:5701
+2022-07-19 00:26:49.241  INFO 1836 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Cluster name: dev
+2022-07-19 00:26:49.242  INFO 1836 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:26:49.277  INFO 1836 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:26:52.060  INFO 1836 --- [main] com.hazelcast.system.security            : [192.168.185.3]:5701 [dev] [5.1.2] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2022-07-19 00:26:52.339  INFO 1836 --- [main] com.hazelcast.instance.impl.Node         : [192.168.185.3]:5701 [dev] [5.1.2] Using Multicast discovery
+2022-07-19 00:26:52.365  WARN 1836 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.185.3]:5701 [dev] [5.1.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-07-19 00:26:53.741  INFO 1836 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.185.3]:5701 [dev] [5.1.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-07-19 00:26:53.749  INFO 1836 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5701 [dev] [5.1.2] [192.168.185.3]:5701 is STARTING
+2022-07-19 00:26:57.170  INFO 1836 --- [main] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5701 [dev] [5.1.2] 
 
-Using generated security password: f4d5b81f-6aa1-45ae-8bb2-25d3dc6f0a20
+Members {size:1, ver:1} [
+	Member [192.168.185.3]:5701 - fd0f264d-fef4-460c-a131-ce5054c238d1 this
+]
 
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
+2022-07-19 00:26:57.375  INFO 1836 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5701 [dev] [5.1.2] [192.168.185.3]:5701 is STARTED
+2022-07-19 00:26:58.622  INFO 1836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-19 00:27:04.663  INFO 1836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-19 00:27:05.106  INFO 1836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-19 00:27:05.456  INFO 1836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-19 00:27:06.973  INFO 1836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-19 00:27:07.474  INFO 1836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-19 00:27:08.825  INFO 1836 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-19 00:27:08.841  INFO 1836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:27:10.772  WARN 1836 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-19 00:27:13.990  WARN 1836 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-2022-07-11 00:41:56.343  INFO 12308 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-07-11 00:41:56.370  INFO 12308 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6164b3a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@345af277, org.springframework.security.web.context.SecurityContextPersistenceFilter@46df794e, org.springframework.security.web.header.HeaderWriterFilter@2003edf, org.springframework.web.filter.CorsFilter@96448ee, org.springframework.security.web.csrf.CsrfFilter@55a07f97, org.springframework.security.web.authentication.logout.LogoutFilter@7611e295, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28c75c93, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1690929, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@59509393, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3f1d4ecf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cd65042, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7674f9d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d6dc2b8, org.springframework.security.web.session.SessionManagementFilter@1ec09a68, org.springframework.security.web.access.ExceptionTranslationFilter@1e12fdcf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2319c1e0]
-2022-07-11 00:41:56.549  INFO 12308 --- [main] io.undertow                              : starting server: Undertow - 2.2.18.Final
-2022-07-11 00:41:56.589  INFO 12308 --- [main] org.xnio                                 : XNIO version 3.8.7.Final
-2022-07-11 00:41:56.643  INFO 12308 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
-2022-07-11 00:41:57.068  INFO 12308 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-11 00:41:57.069  INFO 12308 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-11 00:41:57.076  INFO 12308 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2022-07-11 00:41:57.114  INFO 12308 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
-2022-07-11 00:41:57.266  INFO 12308 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
-2022-07-11 00:41:57.276  INFO 12308 --- [main] c.b.s.SpringdatajpaApplication           : Started SpringdatajpaApplication in 16.329 seconds (JVM running for 19.123)
-2022-07-11 00:45:44.023  WARN 12308 --- [XNIO-1 task-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "info"]
-2022-07-11 00:58:18.225  WARN 12308 --- [XNIO-1 task-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "info"]
-2022-07-11 04:16:26.303  WARN 12308 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h59m35s297ms973µs600ns).
-2022-07-11 07:26:02.027  WARN 12308 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h59m35s101ms672µs600ns).
-2022-07-11 19:49:35.009  WARN 12308 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h8m43s726ms741µs900ns).
-2022-07-11 19:51:56.355  INFO 12308 --- [RMI TCP Connection(77)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-07-11 19:51:58.131  INFO 12308 --- [RMI TCP Connection(77)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.18.Final
-2022-07-11 19:51:58.819  INFO 12308 --- [RMI TCP Connection(77)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-07-11 19:51:59.072  INFO 12308 --- [RMI TCP Connection(77)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-07-11 19:51:59.583  INFO 12308 --- [RMI TCP Connection(77)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-07-11 19:51:59.782  INFO 12308 --- [RMI TCP Connection(77)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-07-11 19:58:23.807  INFO 10736 --- [main] c.b.s.SpringdatajpaApplication           : Starting SpringdatajpaApplication using Java 17.0.1 on Bishal with PID 10736 (C:\Users\bishal\Documents\ignitedMinds\springdatajpa\target\classes started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
-2022-07-11 19:58:23.829  INFO 10736 --- [main] c.b.s.SpringdatajpaApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-07-11 19:58:26.078  INFO 10736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-07-11 19:58:26.180  INFO 10736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
-2022-07-11 19:58:27.594  WARN 10736 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2022-07-11 19:58:27.639  INFO 10736 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2022-07-11 19:58:27.639  INFO 10736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3711 ms
-2022-07-11 19:58:28.276  INFO 10736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-07-11 19:58:29.010  INFO 10736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-07-11 19:58:29.155  INFO 10736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-07-11 19:58:29.392  INFO 10736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-07-11 19:58:30.178  INFO 10736 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-07-11 19:58:30.659  INFO 10736 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-07-11 19:58:31.844  INFO 10736 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-07-11 19:58:31.859  INFO 10736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-07-11 19:58:32.503  WARN 10736 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-07-11 19:58:33.371  WARN 10736 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 249e0d95-b209-4732-ada4-d9f2a47371a2
+Using generated security password: c183e465-381e-402f-b10b-b2b9d2629246
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2022-07-11 19:58:33.704  INFO 10736 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2022-07-11 19:58:33.732  INFO 10736 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e35d743, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63b2418e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f08c343, org.springframework.security.web.header.HeaderWriterFilter@2a15bbf3, org.springframework.web.filter.CorsFilter@70d16858, org.springframework.security.web.csrf.CsrfFilter@408b2ae2, org.springframework.security.web.authentication.logout.LogoutFilter@ab2e887, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6eb332d1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f3a92fd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@789f5552, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2b06c388, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6eeeb9da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17635531, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28c00acd, org.springframework.security.web.session.SessionManagementFilter@5b4b6f3b, org.springframework.security.web.access.ExceptionTranslationFilter@760d6350, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e563293]
-2022-07-11 19:58:33.893  INFO 10736 --- [main] io.undertow                              : starting server: Undertow - 2.2.18.Final
-2022-07-11 19:58:33.956  INFO 10736 --- [main] org.xnio                                 : XNIO version 3.8.7.Final
-2022-07-11 19:58:34.024  INFO 10736 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
-2022-07-11 19:58:34.229  INFO 10736 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
-2022-07-11 19:58:34.346  INFO 10736 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
-2022-07-11 19:58:34.353  INFO 10736 --- [main] c.b.s.SpringdatajpaApplication           : Started SpringdatajpaApplication in 11.549 seconds (JVM running for 13.325)
-2022-07-11 19:58:54.563  INFO 10736 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-11 19:58:54.563  INFO 10736 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-11 19:58:54.566  INFO 10736 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-07-11 20:00:30.298 ERROR 10736 --- [XNIO-1 task-1] io.undertow.request                      : UT005023: Exception handling request to /actuator/logfile
+2022-07-19 00:27:15.683  INFO 1836 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-19 00:27:15.878  INFO 1836 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43b1fdb7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bdbf06f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e6b08d4, org.springframework.security.web.header.HeaderWriterFilter@53e6c017, org.springframework.web.filter.CorsFilter@1c1bc904, org.springframework.security.web.csrf.CsrfFilter@30130a31, org.springframework.security.web.authentication.logout.LogoutFilter@62c019bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c9ed40, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9223122, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@53fa630, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@54ad9ff9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72378bfd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@147c00c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49afaf65, org.springframework.security.web.session.SessionManagementFilter@27b89e0a, org.springframework.security.web.access.ExceptionTranslationFilter@6b8773c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7eba962d]
+2022-07-19 00:27:16.318  INFO 1836 --- [main] c.b.s.SpringdatajpaApplicationTests      : Started SpringdatajpaApplicationTests in 42.863 seconds (JVM running for 49.932)
+2022-07-19 00:27:20.615  INFO 1836 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:27:20.651  INFO 1836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-19 00:27:20.724  INFO 1836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-19 00:29:27.540  INFO 8864 --- [main] c.b.s.SpringdatajpaApplicationTests      : Starting SpringdatajpaApplicationTests using Java 17.0.1 on Bishal with PID 8864 (started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-19 00:29:27.562  INFO 8864 --- [main] c.b.s.SpringdatajpaApplicationTests      : The following 1 profile is active: "test"
+2022-07-19 00:29:30.390  INFO 8864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-19 00:29:30.515  INFO 8864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+2022-07-19 00:29:33.232  WARN 8864 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-07-19 00:29:34.056  INFO 8864 --- [main] com.hazelcast.system.logo                : [192.168.185.3]:5701 [dev] [5.1.2] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2022-07-19 00:29:34.057  INFO 8864 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2022-07-19 00:29:34.057  INFO 8864 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Hazelcast Platform 5.1.2 (20220613 - d9dcc82) starting at [192.168.185.3]:5701
+2022-07-19 00:29:34.057  INFO 8864 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Cluster name: dev
+2022-07-19 00:29:34.058  INFO 8864 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:29:34.086  INFO 8864 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:29:36.161  INFO 8864 --- [main] com.hazelcast.system.security            : [192.168.185.3]:5701 [dev] [5.1.2] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2022-07-19 00:29:36.418  INFO 8864 --- [main] com.hazelcast.instance.impl.Node         : [192.168.185.3]:5701 [dev] [5.1.2] Using Multicast discovery
+2022-07-19 00:29:36.428  WARN 8864 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.185.3]:5701 [dev] [5.1.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-07-19 00:29:37.533  INFO 8864 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.185.3]:5701 [dev] [5.1.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-07-19 00:29:37.541  INFO 8864 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5701 [dev] [5.1.2] [192.168.185.3]:5701 is STARTING
+2022-07-19 00:29:40.417  INFO 8864 --- [main] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5701 [dev] [5.1.2] 
 
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.nio.file.InvalidPathException: Trailing char < > at index 20: logs\application.log 
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar:4.0.4]
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:223) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.7.2.jar:5.7.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.21.jar:5.3.21]
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.1.jar:2.7.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.21.jar:5.3.21]
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:79) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:79) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100) ~[undertow-servlet-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:852) ~[undertow-core-2.2.18.Final.jar:2.2.18.Final]
-	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
-	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1449) ~[jboss-threads-3.1.0.Final.jar:3.1.0.Final]
-	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282) ~[xnio-api-3.8.7.Final.jar:3.8.7.Final]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.nio.file.InvalidPathException: Trailing char < > at index 20: logs\application.log 
-	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:191) ~[na:na]
-	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153) ~[na:na]
-	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77) ~[na:na]
-	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92) ~[na:na]
-	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232) ~[na:na]
-	at java.base/java.io.File.toPath(File.java:2387) ~[na:na]
-	at org.springframework.core.io.FileSystemResource.<init>(FileSystemResource.java:83) ~[spring-core-5.3.21.jar:5.3.21]
-	at org.springframework.boot.actuate.logging.LogFileWebEndpoint.getLogFileResource(LogFileWebEndpoint.java:70) ~[spring-boot-actuator-2.7.1.jar:2.7.1]
-	at org.springframework.boot.actuate.logging.LogFileWebEndpoint.logFile(LogFileWebEndpoint.java:55) ~[spring-boot-actuator-2.7.1.jar:2.7.1]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.3.21.jar:5.3.21]
-	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74) ~[spring-boot-actuator-2.7.1.jar:2.7.1]
-	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.7.1.jar:2.7.1]
-	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:353) ~[spring-boot-actuator-2.7.1.jar:2.7.1]
-	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:458) ~[spring-boot-actuator-2.7.1.jar:2.7.1]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.21.jar:5.3.21]
-	... 111 common frames omitted
+Members {size:1, ver:1} [
+	Member [192.168.185.3]:5701 - ae35b35b-3940-4b75-9820-2b4fc42716c8 this
+]
 
-2022-07-11 20:05:07.932  INFO 10736 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-07-11 20:05:07.949  INFO 10736 --- [RMI TCP Connection(11)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.18.Final
-2022-07-11 20:05:07.953  INFO 10736 --- [RMI TCP Connection(11)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-07-11 20:05:07.966  INFO 10736 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-07-11 20:05:07.970  INFO 10736 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-07-11 20:05:08.024  INFO 10736 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-19 00:29:40.524  INFO 8864 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5701 [dev] [5.1.2] [192.168.185.3]:5701 is STARTED
+2022-07-19 00:29:41.219  INFO 8864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-19 00:29:42.378  INFO 8864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-19 00:29:42.656  INFO 8864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-19 00:29:42.921  INFO 8864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-19 00:29:43.627  INFO 8864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-19 00:29:44.008  INFO 8864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-19 00:29:45.478  INFO 8864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-19 00:29:45.499  INFO 8864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:29:46.683  WARN 8864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-19 00:29:48.963  WARN 8864 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 45b2161f-a35a-4377-b454-c1b711949fe5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-19 00:29:49.606  INFO 8864 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-19 00:29:49.733  INFO 8864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b1c4b48, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e435f0d, org.springframework.security.web.context.SecurityContextPersistenceFilter@515a897c, org.springframework.security.web.header.HeaderWriterFilter@70f5f6c7, org.springframework.web.filter.CorsFilter@51a7ee4e, org.springframework.security.web.csrf.CsrfFilter@6cc91654, org.springframework.security.web.authentication.logout.LogoutFilter@7f5a5ef3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@796eeafb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5a36a405, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@424c8ebe, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2b35dde3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25c3a441, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2057d8ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bb3cbb4, org.springframework.security.web.session.SessionManagementFilter@34c31a34, org.springframework.security.web.access.ExceptionTranslationFilter@3644d12a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70efc3f9]
+2022-07-19 00:29:50.132  INFO 8864 --- [main] c.b.s.SpringdatajpaApplicationTests      : Started SpringdatajpaApplicationTests in 23.737 seconds (JVM running for 26.467)
+2022-07-19 00:29:52.721  INFO 8864 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.185.3]:5701 [dev] [5.1.2] Running shutdown hook... Current state: ACTIVE
+2022-07-19 00:29:52.746  INFO 8864 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:29:52.752  INFO 8864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-19 00:29:52.810  INFO 8864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-19 00:33:41.013  INFO 8416 --- [main] c.b.s.SpringdatajpaApplication           : Starting SpringdatajpaApplication using Java 17.0.1 on Bishal with PID 8416 (C:\Users\bishal\Documents\ignitedMinds\springdatajpa\target\classes started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-19 00:33:41.035  INFO 8416 --- [main] c.b.s.SpringdatajpaApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-07-19 00:33:43.763  INFO 8416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-19 00:33:43.898  INFO 8416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 2 JPA repository interfaces.
+2022-07-19 00:33:46.286  WARN 8416 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-07-19 00:33:46.363  INFO 8416 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-07-19 00:33:46.364  INFO 8416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5229 ms
+2022-07-19 00:33:49.453  WARN 8416 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-07-19 00:33:51.098  INFO 8416 --- [main] com.hazelcast.system.logo                : [192.168.185.3]:5701 [dev] [5.1.2] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2022-07-19 00:33:51.099  INFO 8416 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2022-07-19 00:33:51.099  INFO 8416 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Hazelcast Platform 5.1.2 (20220613 - d9dcc82) starting at [192.168.185.3]:5701
+2022-07-19 00:33:51.099  INFO 8416 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Cluster name: dev
+2022-07-19 00:33:51.100  INFO 8416 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:33:51.192  INFO 8416 --- [main] com.hazelcast.system                     : [192.168.185.3]:5701 [dev] [5.1.2] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:33:54.352  INFO 8416 --- [main] com.hazelcast.system.security            : [192.168.185.3]:5701 [dev] [5.1.2] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2022-07-19 00:33:54.679  INFO 8416 --- [main] com.hazelcast.instance.impl.Node         : [192.168.185.3]:5701 [dev] [5.1.2] Using Multicast discovery
+2022-07-19 00:33:54.744  WARN 8416 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.185.3]:5701 [dev] [5.1.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-07-19 00:33:56.519  INFO 8416 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.185.3]:5701 [dev] [5.1.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-07-19 00:33:56.533  INFO 8416 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5701 [dev] [5.1.2] [192.168.185.3]:5701 is STARTING
+2022-07-19 00:33:59.818  INFO 8416 --- [main] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5701 [dev] [5.1.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.185.3]:5701 - 2919b8cf-14c4-4464-821b-78d7e473d24a this
+]
+
+2022-07-19 00:34:00.115  INFO 8416 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5701 [dev] [5.1.2] [192.168.185.3]:5701 is STARTED
+2022-07-19 00:34:00.605  INFO 8416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-19 00:34:02.806  INFO 8416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-19 00:34:03.243  INFO 8416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-19 00:34:03.686  INFO 8416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-19 00:34:04.814  INFO 8416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-19 00:34:06.912  INFO 8416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-19 00:34:09.847  INFO 8416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-19 00:34:09.862  INFO 8416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:34:10.615  WARN 8416 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-19 00:34:12.179  WARN 8416 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6db3bc0a-f921-499c-8345-03775cfa8b85
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-19 00:34:12.839  INFO 8416 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-19 00:34:12.889  INFO 8416 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56540a58, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15c0a8ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fc82de5, org.springframework.security.web.header.HeaderWriterFilter@6ccf06f1, org.springframework.web.filter.CorsFilter@10bf2185, org.springframework.security.web.csrf.CsrfFilter@7a68818c, org.springframework.security.web.authentication.logout.LogoutFilter@2d12a71f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@372b2573, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@792a9cb1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@14c06f50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ca9ffc0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d71476c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@125447a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6230a15a, org.springframework.security.web.session.SessionManagementFilter@1455d0f5, org.springframework.security.web.access.ExceptionTranslationFilter@2f5a23c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76140ca5]
+2022-07-19 00:34:13.723  INFO 8416 --- [main] io.undertow                              : starting server: Undertow - 2.2.18.Final
+2022-07-19 00:34:14.250  INFO 8416 --- [main] org.xnio                                 : XNIO version 3.8.7.Final
+2022-07-19 00:34:14.334  INFO 8416 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2022-07-19 00:34:14.489  INFO 8416 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-07-19 00:34:14.750  INFO 8416 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2022-07-19 00:34:14.778  INFO 8416 --- [main] c.b.s.SpringdatajpaApplication           : Started SpringdatajpaApplication in 34.936 seconds (JVM running for 36.989)
+2022-07-19 00:34:28.632  INFO 8416 --- [RMI TCP Connection(4)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-19 00:34:28.633  INFO 8416 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-19 00:34:28.635  INFO 8416 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-19 00:34:50.139  INFO 5364 --- [main] c.b.s.SpringdatajpaApplicationTests      : Starting SpringdatajpaApplicationTests using Java 17.0.1 on Bishal with PID 5364 (started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-19 00:34:50.144  INFO 5364 --- [main] c.b.s.SpringdatajpaApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-07-19 00:34:56.336  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-19 00:34:56.539  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186 ms. Found 2 JPA repository interfaces.
+2022-07-19 00:35:00.532  WARN 5364 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-07-19 00:35:01.571  INFO 5364 --- [main] com.hazelcast.system.logo                : [192.168.185.3]:5702 [dev] [5.1.2] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2022-07-19 00:35:01.571  INFO 5364 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2022-07-19 00:35:01.572  INFO 5364 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Hazelcast Platform 5.1.2 (20220613 - d9dcc82) starting at [192.168.185.3]:5702
+2022-07-19 00:35:01.573  INFO 5364 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Cluster name: dev
+2022-07-19 00:35:01.573  INFO 5364 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:35:01.593  INFO 5364 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:35:04.075  INFO 5364 --- [main] com.hazelcast.system.security            : [192.168.185.3]:5702 [dev] [5.1.2] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2022-07-19 00:35:04.347  INFO 5364 --- [main] com.hazelcast.instance.impl.Node         : [192.168.185.3]:5702 [dev] [5.1.2] Using Multicast discovery
+2022-07-19 00:35:04.365  WARN 5364 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.185.3]:5702 [dev] [5.1.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-07-19 00:35:05.631  INFO 5364 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.185.3]:5702 [dev] [5.1.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-07-19 00:35:05.645  INFO 5364 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5702 [dev] [5.1.2] [192.168.185.3]:5702 is STARTING
+2022-07-19 00:35:06.211  INFO 5364 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.185.3]:5702 [dev] [5.1.2] Trying to join to discovered node: [192.168.185.3]:5701
+2022-07-19 00:35:06.446  INFO 8416 --- [hz.hazel-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.185.3]:5701 [dev] [5.1.2] Initialized new cluster connection between /192.168.185.3:5701 and /192.168.185.3:62108
+2022-07-19 00:35:06.450  INFO 5364 --- [hz.hazel-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.185.3]:5702 [dev] [5.1.2] Initialized new cluster connection between /192.168.185.3:62108 and /192.168.185.3:5701
+2022-07-19 00:35:11.657  INFO 8416 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5701 [dev] [5.1.2] 
+
+Members {size:2, ver:2} [
+	Member [192.168.185.3]:5701 - 2919b8cf-14c4-4464-821b-78d7e473d24a this
+	Member [192.168.185.3]:5702 - ac5c3dd1-93af-4106-9251-46f6b1daeb28
+]
+
+2022-07-19 00:35:11.719  INFO 5364 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5702 [dev] [5.1.2] 
+
+Members {size:2, ver:2} [
+	Member [192.168.185.3]:5701 - 2919b8cf-14c4-4464-821b-78d7e473d24a
+	Member [192.168.185.3]:5702 - ac5c3dd1-93af-4106-9251-46f6b1daeb28 this
+]
+
+2022-07-19 00:35:11.885  INFO 5364 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5702 [dev] [5.1.2] [192.168.185.3]:5702 is STARTED
+2022-07-19 00:35:13.634  INFO 5364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-19 00:35:16.379  INFO 5364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-19 00:35:16.839  INFO 5364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-19 00:35:17.442  INFO 5364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-19 00:35:18.721  INFO 5364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-19 00:35:19.345  INFO 5364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-19 00:35:22.029  INFO 5364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-19 00:35:22.066  INFO 5364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:35:23.667  WARN 5364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-19 00:35:28.142  WARN 5364 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5bb04f72-da22-4f4e-928f-ad2ef3de1ee2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-19 00:35:28.789  INFO 8416 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.185.3]:5701 [dev] [5.1.2] processors=4, physical.memory.total=3.9G, physical.memory.free=301.4M, swap.space.total=0, swap.space.free=0, heap.memory.used=46.4M, heap.memory.free=20.6M, heap.memory.total=67.0M, heap.memory.max=1000.0M, heap.memory.used/total=69.25%, heap.memory.used/max=4.64%, minor.gc.count=26, minor.gc.time=223ms, major.gc.count=0, major.gc.time=0ms, load.process=0.00%, load.system=76.09%, load.systemAverage=n/a thread.count=64, thread.peakCount=65, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=14, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=1, client.connection.count=0, connection.count=1
+2022-07-19 00:35:28.935  INFO 5364 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-19 00:35:29.157  INFO 5364 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51f714d1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77e8492f, org.springframework.security.web.context.SecurityContextPersistenceFilter@d56d9f6, org.springframework.security.web.header.HeaderWriterFilter@33ef701e, org.springframework.web.filter.CorsFilter@1263d20d, org.springframework.security.web.csrf.CsrfFilter@284e68ae, org.springframework.security.web.authentication.logout.LogoutFilter@494775f1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e9355a6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20c1cb0c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4f355321, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@424c8ebe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e822394, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3520d2db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@260d878a, org.springframework.security.web.session.SessionManagementFilter@515a897c, org.springframework.security.web.access.ExceptionTranslationFilter@4ec25389, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7aeb5402]
+2022-07-19 00:35:30.118  INFO 5364 --- [main] c.b.s.SpringdatajpaApplicationTests      : Started SpringdatajpaApplicationTests in 42.016 seconds (JVM running for 47.638)
+2022-07-19 00:35:33.596  INFO 8416 --- [hz.hazel-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.185.3]:5701 [dev] [5.1.2] Connection[id=1, /192.168.185.3:5701->/192.168.185.3:62108, qualifier=null, endpoint=[192.168.185.3]:5702, remoteUuid=ac5c3dd1-93af-4106-9251-46f6b1daeb28, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+2022-07-19 00:35:33.606  INFO 5364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:35:33.611  INFO 5364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-19 00:35:33.619  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Connecting to /192.168.185.3:5702, timeout: 10000, bind-any: true
+2022-07-19 00:35:33.683  INFO 5364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-19 00:35:35.669  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Could not connect to: /192.168.185.3:5702. Reason: IOException[Connection refused: no further information to address /192.168.185.3:5702]
+2022-07-19 00:35:35.771  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Connecting to /192.168.185.3:5702, timeout: 10000, bind-any: true
+2022-07-19 00:35:37.813  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Could not connect to: /192.168.185.3:5702. Reason: IOException[Connection refused: no further information to address /192.168.185.3:5702]
+2022-07-19 00:35:37.915  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Connecting to /192.168.185.3:5702, timeout: 10000, bind-any: true
+2022-07-19 00:35:39.954  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Could not connect to: /192.168.185.3:5702. Reason: IOException[Connection refused: no further information to address /192.168.185.3:5702]
+2022-07-19 00:35:39.955  WARN 8416 --- [hz.hazel-instance.cached.thread-7] .h.i.s.t.TcpServerConnectionErrorHandler : [192.168.185.3]:5701 [dev] [5.1.2] Removing connection to endpoint [192.168.185.3]:5702 Cause => java.io.IOException {Connection refused: no further information to address /192.168.185.3:5702}, Error-Count: 5
+2022-07-19 00:35:39.956  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.i.cluster.impl.MembershipManager     : [192.168.185.3]:5701 [dev] [5.1.2] Removing Member [192.168.185.3]:5702 - ac5c3dd1-93af-4106-9251-46f6b1daeb28
+2022-07-19 00:35:39.961  INFO 8416 --- [hz.hazel-instance.cached.thread-7] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5701 [dev] [5.1.2] 
+
+Members {size:1, ver:3} [
+	Member [192.168.185.3]:5701 - 2919b8cf-14c4-4464-821b-78d7e473d24a this
+]
+
+2022-07-19 00:35:40.049  INFO 8416 --- [hz.hazel-instance.cached.thread-1] c.h.t.TransactionManagerService          : [192.168.185.3]:5701 [dev] [5.1.2] Committing/rolling-back live transactions of [192.168.185.3]:5702, UUID: ac5c3dd1-93af-4106-9251-46f6b1daeb28
+2022-07-19 00:37:22.403  INFO 10420 --- [main] c.b.s.SpringdatajpaApplicationTests      : Starting SpringdatajpaApplicationTests using Java 17.0.1 on Bishal with PID 10420 (started by bishal in C:\Users\bishal\Documents\ignitedMinds\springdatajpa)
+2022-07-19 00:37:22.406  INFO 10420 --- [main] c.b.s.SpringdatajpaApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-07-19 00:37:25.133  INFO 10420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-19 00:37:25.258  INFO 10420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 2 JPA repository interfaces.
+2022-07-19 00:37:26.910  WARN 10420 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-07-19 00:37:27.430  INFO 10420 --- [main] com.hazelcast.system.logo                : [192.168.185.3]:5702 [dev] [5.1.2] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2022-07-19 00:37:27.432  INFO 10420 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2022-07-19 00:37:27.433  INFO 10420 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Hazelcast Platform 5.1.2 (20220613 - d9dcc82) starting at [192.168.185.3]:5702
+2022-07-19 00:37:27.435  INFO 10420 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Cluster name: dev
+2022-07-19 00:37:27.436  INFO 10420 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following: 
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:37:27.447  INFO 10420 --- [main] com.hazelcast.system                     : [192.168.185.3]:5702 [dev] [5.1.2] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2022-07-19 00:37:28.649  INFO 10420 --- [main] com.hazelcast.system.security            : [192.168.185.3]:5702 [dev] [5.1.2] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2022-07-19 00:37:28.833  INFO 10420 --- [main] com.hazelcast.instance.impl.Node         : [192.168.185.3]:5702 [dev] [5.1.2] Using Multicast discovery
+2022-07-19 00:37:28.844  WARN 10420 --- [main] com.hazelcast.cp.CPSubsystem             : [192.168.185.3]:5702 [dev] [5.1.2] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-07-19 00:37:29.401  INFO 10420 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.185.3]:5702 [dev] [5.1.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-07-19 00:37:29.412  INFO 10420 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5702 [dev] [5.1.2] [192.168.185.3]:5702 is STARTING
+2022-07-19 00:37:29.822  INFO 10420 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.185.3]:5702 [dev] [5.1.2] Trying to join to discovered node: [192.168.185.3]:5701
+2022-07-19 00:37:29.856  INFO 8416 --- [hz.hazel-instance.IO.thread-in-1] c.h.i.server.tcp.TcpServerConnection     : [192.168.185.3]:5701 [dev] [5.1.2] Initialized new cluster connection between /192.168.185.3:5701 and /192.168.185.3:62145
+2022-07-19 00:37:29.858  INFO 10420 --- [hz.hazel-instance.IO.thread-in-0] c.h.i.server.tcp.TcpServerConnection     : [192.168.185.3]:5702 [dev] [5.1.2] Initialized new cluster connection between /192.168.185.3:62145 and /192.168.185.3:5701
+2022-07-19 00:37:35.002  INFO 8416 --- [hz.hazel-instance.generic-operation.thread-1] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5701 [dev] [5.1.2] 
+
+Members {size:2, ver:4} [
+	Member [192.168.185.3]:5701 - 2919b8cf-14c4-4464-821b-78d7e473d24a this
+	Member [192.168.185.3]:5702 - 994c173a-df67-4370-9908-5b66dfefd802
+]
+
+2022-07-19 00:37:35.010  INFO 10420 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5702 [dev] [5.1.2] 
+
+Members {size:2, ver:4} [
+	Member [192.168.185.3]:5701 - 2919b8cf-14c4-4464-821b-78d7e473d24a
+	Member [192.168.185.3]:5702 - 994c173a-df67-4370-9908-5b66dfefd802 this
+]
+
+2022-07-19 00:37:35.035  INFO 10420 --- [main] com.hazelcast.core.LifecycleService      : [192.168.185.3]:5702 [dev] [5.1.2] [192.168.185.3]:5702 is STARTED
+2022-07-19 00:37:35.800  INFO 10420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-19 00:37:36.706  INFO 10420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-19 00:37:37.008  INFO 10420 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-19 00:37:37.380  INFO 10420 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-19 00:37:37.983  INFO 10420 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-19 00:37:38.531  INFO 10420 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-19 00:37:39.761  INFO 10420 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-19 00:37:39.780  INFO 10420 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:37:41.237  WARN 10420 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-19 00:37:44.252  WARN 10420 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 53d4d7cd-ae51-49e6-a2e8-a4cc7feb6d53
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-19 00:37:44.833  INFO 10420 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-19 00:37:44.979  INFO 10420 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@105d2c27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ca46aaf, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d7fe300, org.springframework.security.web.header.HeaderWriterFilter@5d3b0f8a, org.springframework.web.filter.CorsFilter@701c092c, org.springframework.security.web.csrf.CsrfFilter@348b26e0, org.springframework.security.web.authentication.logout.LogoutFilter@7e7d6175, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@520b547c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63088bbd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@20c4be8d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@169f4152, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50dfceff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26a5007, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@590182a6, org.springframework.security.web.session.SessionManagementFilter@165a78d4, org.springframework.security.web.access.ExceptionTranslationFilter@34949460, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c53ce60]
+2022-07-19 00:37:45.621  INFO 10420 --- [main] c.b.s.SpringdatajpaApplicationTests      : Started SpringdatajpaApplicationTests in 24.082 seconds (JVM running for 26.915)
+2022-07-19 00:37:48.204  INFO 10420 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.185.3]:5702 [dev] [5.1.2] Running shutdown hook... Current state: ACTIVE
+2022-07-19 00:37:48.252  INFO 8416 --- [hz.hazel-instance.IO.thread-in-1] c.h.i.server.tcp.TcpServerConnection     : [192.168.185.3]:5701 [dev] [5.1.2] Connection[id=2, /192.168.185.3:5701->/192.168.185.3:62145, qualifier=null, endpoint=[192.168.185.3]:5702, remoteUuid=994c173a-df67-4370-9908-5b66dfefd802, alive=false, connectionType=MEMBER, planeIndex=0] closed. Reason: Connection closed by the other side
+2022-07-19 00:37:48.254  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Connecting to /192.168.185.3:5702, timeout: 10000, bind-any: true
+2022-07-19 00:37:48.291  INFO 10420 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:37:48.295  INFO 10420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-19 00:37:48.322  INFO 10420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-19 00:37:50.304  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Could not connect to: /192.168.185.3:5702. Reason: IOException[Connection refused: no further information to address /192.168.185.3:5702]
+2022-07-19 00:37:50.406  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Connecting to /192.168.185.3:5702, timeout: 10000, bind-any: true
+2022-07-19 00:37:52.455  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Could not connect to: /192.168.185.3:5702. Reason: IOException[Connection refused: no further information to address /192.168.185.3:5702]
+2022-07-19 00:37:54.615  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Connecting to /192.168.185.3:5702, timeout: 10000, bind-any: true
+2022-07-19 00:37:56.649  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.i.server.tcp.TcpServerConnector      : [192.168.185.3]:5701 [dev] [5.1.2] Could not connect to: /192.168.185.3:5702. Reason: IOException[Connection refused: no further information to address /192.168.185.3:5702]
+2022-07-19 00:37:56.650  WARN 8416 --- [hz.hazel-instance.cached.thread-4] .h.i.s.t.TcpServerConnectionErrorHandler : [192.168.185.3]:5701 [dev] [5.1.2] Removing connection to endpoint [192.168.185.3]:5702 Cause => java.io.IOException {Connection refused: no further information to address /192.168.185.3:5702}, Error-Count: 5
+2022-07-19 00:37:56.650  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.i.cluster.impl.MembershipManager     : [192.168.185.3]:5701 [dev] [5.1.2] Removing Member [192.168.185.3]:5702 - 994c173a-df67-4370-9908-5b66dfefd802
+2022-07-19 00:37:56.651  INFO 8416 --- [hz.hazel-instance.cached.thread-4] c.h.internal.cluster.ClusterService      : [192.168.185.3]:5701 [dev] [5.1.2] 
+
+Members {size:1, ver:5} [
+	Member [192.168.185.3]:5701 - 2919b8cf-14c4-4464-821b-78d7e473d24a this
+]
+
+2022-07-19 00:37:56.651  INFO 8416 --- [hz.hazel-instance.cached.thread-9] c.h.t.TransactionManagerService          : [192.168.185.3]:5701 [dev] [5.1.2] Committing/rolling-back live transactions of [192.168.185.3]:5702, UUID: 994c173a-df67-4370-9908-5b66dfefd802
+2022-07-19 00:41:31.875  INFO 8416 --- [XNIO-1 task-1] c.h.i.p.impl.PartitionStateManager       : [192.168.185.3]:5701 [dev] [5.1.2] Initializing cluster partition table arrangement...
+2022-07-19 00:41:32.114  INFO 8416 --- [XNIO-1 task-1] c.b.s.controllers.ProductRestController  : Finding the Product by ID 1
+2022-07-19 00:41:39.012  INFO 8416 --- [XNIO-1 task-1] c.b.s.controllers.ProductRestController  : Finding the Product by ID 9
+2022-07-19 00:42:52.820  INFO 8416 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-19 00:42:52.828  INFO 8416 --- [RMI TCP Connection(13)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.18.Final
+2022-07-19 00:42:52.834  INFO 8416 --- [RMI TCP Connection(13)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-07-19 00:42:52.850  INFO 8416 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-19 00:42:52.905  INFO 8416 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-19 00:42:52.941  INFO 8416 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

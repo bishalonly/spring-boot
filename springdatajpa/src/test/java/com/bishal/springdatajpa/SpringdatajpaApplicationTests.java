@@ -50,7 +50,7 @@ class SpringdatajpaApplicationTests {
 		
 		
 		RestTemplate restTemplate = new RestTemplate();
-		Product product = restTemplate.getForObject(baseURL +"/1", Product.class);
+		Product product = restTemplate.getForObject(url, Product.class);
 		
 		assertNotNull(product);
 		assertEquals("ven-huesen", product.getName(), "Correct they are equals. Nice work");

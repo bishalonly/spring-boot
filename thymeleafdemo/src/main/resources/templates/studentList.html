@@ -1,7 +1,22 @@
 <html xmlns:th="http://www.thymeleaf.org/">
-<head><title>Student rendered</title></head>
+
+<head>
+	<title>Student List Rendered</title>
+</head>
+
 <body>
-Student Name :<b th:text="${studentInfo.name}"></b> </br>
-Student Score :<b th:text="${studentInfo.score}"></b>
+	
+	
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>Score</td>
+		</tr>
+		<tr th:each="student:${studentsInfo}">
+			<td th:text="${student.name}"> </td>
+			<td th:text="${student.score}"> </td>
+		</tr>
+	</table>
 </body>
-</html >
+
+</html>

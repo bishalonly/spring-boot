@@ -1,7 +1,0 @@
-package com.bishal.springdatajpa.repos;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ProductRepository extends JpaRepository<T, ID> {
-
-}

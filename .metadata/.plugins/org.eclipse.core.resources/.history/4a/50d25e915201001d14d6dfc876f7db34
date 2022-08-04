@@ -1,7 +1,0 @@
-<html xmlns:th="http://www.thymeleaf.org/">
-<head><title>Student rendered</title></head>
-<body>
-Student name :<b th:text="${student.name}"></b> </br>
-Student Score :<b th:text="${student.score}"></b>
-</body>
-</html >
